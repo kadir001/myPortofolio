@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadir — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <div class="nav-logo">k<span>.</span>dev</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          beschikbaar voor opdrachten
+        </div>
+        <p class="hero-eyebrow">// Frontend Developer</p>
+        <h1 class="hero-name">
+          Kadir<br>
+          <span class="accent">bouwt het web.</span>
+        </h1>
+        <p class="hero-title">Interfaces die voelen als magie — van pixel tot performance.</p>
+        <p class="hero-desc">
+          Ik maak snelle, toegankelijke en visueel scherpe webapplicaties. Clean code, doordachte UX, en aandacht voor elk detail.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Bekijk werk →</a>
+          <a href="#contact" class="btn btn-outline">Neem contact op</a>
+        </div>
+      </div>
+
+      <div class="code-window">
+        <div class="code-topbar">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <span class="code-filename">kadir.tsx</span>
+        </div>
+        <div class="code-body" id="code-output"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label reveal">// 01 — expertise</p>
+    <h2 class="section-title reveal">Wat ik <em>meebreng</em></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <h3 class="skill-name">Frontend Engineering</h3>
+        <p class="skill-desc">Complexe UI's bouwen die razendsnel laden en op elk apparaat perfect werken. Van component tot pagina.</p>
+        <div class="skill-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Vue</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3 class="skill-name">Design Systems</h3>
+        <p class="skill-desc">Van Figma naar code. Ik bouw schaalbare systemen waarbij elke knop en elk component klopt.</p>
+        <div class="skill-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">CSS / Sass</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">Storybook</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🚀</div>
+        <h3 class="skill-name">Performance & DX</h3>
+        <p class="skill-desc">Snelheid is een feature. Core Web Vitals, bundleoptimalisatie en moderne tooling zijn mijn dagelijkse kost.</p>
+        <div class="skill-tags">
+          <span class="tag">Vite</span>
+          <span class="tag">Webpack</span>
+          <span class="tag">Lighthouse</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔗</div>
+        <h3 class="skill-name">API & Integraties</h3>
+        <p class="skill-desc">REST, GraphQL, WebSockets — ik koppel frontends aan alles wat nodig is en houd de state schoon.</p>
+        <div class="skill-tags">
+          <span class="tag">REST</span>
+          <span class="tag">GraphQL</span>
+          <span class="tag">Zustand</span>
+          <span class="tag">React Query</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label reveal">// 02 — werk</p>
+    <h2 class="section-title reveal">Geselecteerde <em>projecten</em></h2>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <p class="project-number">PROJECT_01</p>
+        <h3 class="project-name">Dashboard Platform</h3>
+        <p class="project-desc">Real-time analytics dashboard voor een SaaS product. 40% snellere laadtijd door slimme code-splitting en server-side rendering.</p>
+        <div class="skill-tags" style="margin-bottom: 1.5rem">
+          <span class="tag">Next.js</span><span class="tag">Recharts</span><span class="tag">Prisma</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ live demo</a>
+          <a href="#" class="project-link">⌥ github</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <p class="project-number">PROJECT_02</p>
+        <h3 class="project-name">Component Library</h3>
+        <p class="project-desc">Open-source UI bibliotheek met 60+ componenten, volledig getest, toegankelijk en gedocumenteerd in Storybook.</p>
+        <div class="skill-tags" style="margin-bottom: 1.5rem">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Storybook</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ live demo</a>
+          <a href="#" class="project-link">⌥ github</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <p class="project-number">PROJECT_03</p>
+        <h3 class="project-name">E-commerce Relaunch</h3>
+        <p class="project-desc">Volledige frontend rebuild van een webshop. Core Web Vitals groen, conversieratio +22%, mobile-first aanpak.</p>
+        <div class="skill-tags" style="margin-bottom: 1.5rem">
+          <span class="tag">Vue 3</span><span class="tag">Nuxt</span><span class="tag">Shopify</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ live demo</a>
+          <a href="#" class="project-link">⌥ github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <p class="section-label reveal">// 03 — contact</p>
+      <h2 class="section-title reveal">Laten we iets <em>bouwen</em></h2>
+      <p class="contact-desc reveal">
+        Heb je een project, een idee, of wil je gewoon eens sparren over code? Ik hoor het graag.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:kadir@example.com" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          kadir@example.com
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/kadir001/" target="_blank" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Gebouwd door <span>Kadir</span> — met passie, koffie en te veel tabs open.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
