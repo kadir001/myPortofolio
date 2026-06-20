@@ -1,1 +1,1 @@
-kadir001.github.io/myPortofolio/
+http://kadir001.github.io/myPortofolio/
